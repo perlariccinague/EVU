@@ -1,0 +1,28 @@
+<div class="slider-container">
+    <div class="slides">
+        <?php foreach($this->slide as $key=>$slide): ?>
+            <div class="slide ">
+                <img src="{{file::<?= $slide->image ?>}}">
+             <!--   <div class="caption-block">-->
+                    <div class="caption">
+                        <h3><?= $slide->caption ?></h3>
+                        <p><?= $slide->caption_text?></p>
+                    </div>
+              <!--  </div>-->
+            </div>
+        <?php endforeach; ?>
+    </div>
+    <div class="button">
+        <button class="prev-slider" onclick="prevSlide()"><img src="files/layout/pfeil-slider-links.svg" alt=""></button>
+        <button class="next-slider" onclick="nextSlide()"><img src="files/layout/pfeil-slider-rechts.svg" alt=""></button>
+    </div>
+    <div class="dots"></div>
+</div>
+
+
+
+
+
+
+
+

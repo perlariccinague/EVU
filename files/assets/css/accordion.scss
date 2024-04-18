@@ -1,0 +1,32 @@
+@import "variables";
+
+.ce_accordionStart.ce_accordion {
+  border-bottom: 2px solid #003f74;
+  width: 100%;
+  margin: 0 auto;
+  .toggler {
+    position: relative;
+    padding: 10px 75px;
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    &:after {
+      content: "";
+      position: absolute;
+      right: 60px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 25px;
+      height: 25px;
+      background: url("/files/layout/pfeil-accordeon-down.svg") no-repeat 0/cover;
+      transition: background 250ms;
+    }
+    &.active {
+      &:after {
+        background: url("/files/layout/pfeil-accordeon-up.svg") no-repeat 0/cover;
+      }
+    }
+  }
+}

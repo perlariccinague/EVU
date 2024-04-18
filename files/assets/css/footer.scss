@@ -1,0 +1,112 @@
+/*#footer {
+  display:none;
+}*/
+
+.footer_img {
+  display: none;
+}
+
+#footer {
+  .inside {
+    &:before {
+      position: absolute;
+      content: "";
+      width: 150%;
+      height: 246px;
+      top: -187px;
+      left: -25%;
+      background: #002c4c;
+      border-top: 40px solid #f49600;
+      transform: rotate(-4deg);
+      z-index: 10;
+    }
+  }
+}
+
+#footer .footer {
+  background: #002c4c;
+  z-index: 25;
+  position: relative;
+  .footer-top {
+    .liste {
+      padding-top: 0;
+      margin-bottom: 0;
+      padding-bottom: 85px;
+    }
+    .header_logo {
+      width: 90%;
+      max-width: 1500px;
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      justify-content: end;
+    /*  top: -160px;*/
+      transform: rotate(-4deg);
+      top: -187px;
+      img {
+        width: 500px;
+      }
+    }
+  }
+}
+
+footer .footer-top .liste ul .last.h {
+  border-bottom: 0;
+}
+
+.footer-bottom {
+ background-color: #009ce0;
+  position: relative;
+  .mod_customnav {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 10px 0;
+    ul {
+      display: flex;
+      li {
+        &:first-child {
+          position: relative;
+          padding-right: 23px;
+          &:after {
+            position: absolute;
+            content: "//";
+            right: 4px;
+            font-size: 18px;
+          }
+        }
+        a {
+          font:1.2em 'Exo 2',sans-serif;
+          text-decoration:none;
+          color:#002c4c;
+          text-transform:uppercase;
+          letter-spacing:.5px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #footer {
+    background-color:#002c4c;
+    display: block !important;
+    .footer_img {
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+      display: table;
+      max-width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  #footer .footer .footer-top .liste ul a {
+    width: 47%;
+    font: 1.2em "Exo 2", sans-serif;
+  }
+}

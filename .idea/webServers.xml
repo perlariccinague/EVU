@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="19e5cc1b-869e-4b9e-813e-c56d1e314bac" name="server" url="http://ftp.energievonuns.de">
+        <fileTransfer rootFolder="/cto413" host="ftp.energievonuns.de" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

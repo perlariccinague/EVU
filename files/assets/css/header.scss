@@ -1,0 +1,155 @@
+.start #header {
+  min-height:845px;
+  margin-top:40px;
+  /*background-color:#002c4c;*/
+  background: url("/files/layout/Titelbilder/Header-energie-von-uns.webp") no-repeat 0/cover;
+}
+#header {
+  margin-top:40px;
+  /*background-color:#002c4c;*/
+  background: url("/files/layout/Titelbilder/Header-energie-von-uns.webp") no-repeat;
+  min-height: 584px;
+  .Headline {
+    display: none;
+  }
+  .header_logo {
+    position: absolute;
+   /* top: 0;*/
+    top: -43px;
+    right: 10vw;
+    img {
+      max-width: 43vw;
+    }
+  }
+}
+
+#header .mod_customnav {
+  position: absolute;
+  /*top: 10px;*/
+  top: -33px;
+  left: 20vw;
+  li {
+    float: left;
+    &:first-child {
+      position: relative;
+      padding-right: 23px;
+      &:after {
+        position: absolute;
+        content: "//";
+        right: 4px;
+        font-size: 18px;
+      }
+    }
+  }
+  a {
+    font:1.2em 'Exo 2',sans-serif;
+    text-decoration:none;
+    color:#002c4c;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    font-weight: 300;
+  }
+}
+
+#header .mod_customnav strong,
+#header .mod_customnav a:hover {
+  font:1.2em 'Exo 2',sans-serif;
+  text-decoration:none;
+  color:#fff;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+  font-weight: 300;
+}
+
+#header .header_image {
+  width:100%;
+  border-top:0px solid #009ce0;
+  position: absolute;
+ /* top: 40px;*/
+  img {
+    width:100%;
+    height:auto;
+  }
+}
+
+nav.mobil {
+  display:none;
+}
+
+@media screen and (max-width: 1280px) {
+  #header, .start #header {
+    min-height: auto;
+  }
+
+  #header {
+    margin-top: 0 !important;
+    .header_image {
+      display:none;
+    }
+    .header_logo {
+      right: auto !important;
+      position: relative !important;
+      text-align: center;
+      img {
+        max-width: 100% !important;
+      }
+    }
+  }
+
+  #header .Headline {
+    margin-top: 50px;
+    display: block;
+    p {
+      max-width:630px;
+      margin-right:auto;
+      margin-left:auto;
+      padding-bottom:19px;
+      text-align:center;
+      font:3em/1.6em 'Exo 2',sans-serif;
+      color:#fff;
+      text-transform:uppercase;
+      font-weight: 300;
+    }
+    hr {
+      height:1.5px;
+      max-width:475px;
+      margin-right:auto;
+      margin-left:auto;
+      background-color:#fff;
+      border:0px;
+    }
+  }
+
+  nav.mobil,
+  .nav-open {
+ /*   right:18vw;*/
+    display: block !important;
+    left: auto !important;
+    right: 18vw !important;
+    top: 0 !important;
+  }
+
+  #header .mod_customnav {
+    display:none;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  nav.mobil,
+  .nav-open {
+    right: 11vw !important;
+  }
+
+  #header .Headline {
+    p {
+      font-size: 1.2em;
+      padding-bottom: 0;
+    }
+    hr {
+      max-width: 320px !important;
+    }
+  }
+}
+
+
+
