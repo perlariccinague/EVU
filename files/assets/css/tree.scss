@@ -30,16 +30,19 @@
     }
     .tree-bottom {
       display: none;
-      position: relative;
-      top: 50%;
-      left: 0%;
-      background: $green;
+      /*position: relative;*/
+      position: fixed;
+     /* top: 50%;*/
+      top: 0;
+      left: 50%;
+      background: #60B22C;
       padding: 5px 10px;
       box-sizing: border-box;
       box-shadow: 0 0 20px #000000f2;
       z-index: 200;
-      width: 466px;
+      width: 100%;
       max-width: 600px;
+      transform: translateX(-50%);
       h3 {
         text-transform: uppercase;
         color: white;
@@ -102,5 +105,42 @@
   &.leaf6 {
     left: 14%;
     top: 21.5%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #main .ce_rsce_my_tree .tree-block {
+    .tree-top {
+      .dot {
+        width: 15px;
+        height: 14.5px;
+      }
+    }
+    .tree-bottom {
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
+
+  .ce_rsce_my_tree {
+    &.leaf1 {
+      top: 14.5%;
+    }
+    &.leaf2 {
+      top: 51.5%;
+    }
+    &.leaf3 {
+      top: 62%;
+    }
+    &.leaf4 {
+      left: 77%;
+      top: 25.5%;
+    }
+    &.leaf5 {
+      top: 52.5%;
+    }
+    &.leaf6 {
+      top: 17.5%;
+    }
   }
 }

@@ -107,7 +107,30 @@
 }
 
 @media screen and (max-width: 1280px) {
-  .slider-block {
+  /*.slider-block {
     margin-top: -60px;
+  }*/
+}
+
+@media screen and (max-width: 850px) {
+  .slider-container {
+    height: 85vw;
+    .slides .slide img {
+      height: 85vw;
+    }
+    .button {
+      bottom: 18px;
+    }
+  }
+  #main .slider-block .caption {
+    bottom: 15px;
+    width: 100%;
+    padding: 30px 0 10px;
+    h3 {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
+

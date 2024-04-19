@@ -32,6 +32,8 @@
       padding-top: 0;
       margin-bottom: 0;
       padding-bottom: 85px;
+      margin-top: -110px;
+
     }
     .header_logo {
       width: 90%;
@@ -108,5 +110,31 @@ footer .footer-top .liste ul .last.h {
   #footer .footer .footer-top .liste ul a {
     width: 47%;
     font: 1.2em "Exo 2", sans-serif;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #footer .footer .footer-top .liste ul a {
+    width: 48%;
+    font: 1.1em "Exo 2", sans-serif;
+  }
+  .footer-bottom .mod_customnav ul {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  #footer .footer .footer-top .liste ul a {
+    width: 100%;
+    font: 1.2em "Exo 2", sans-serif;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #footer .footer .footer-top .liste ul a {
+    font-size: 15px;
+  }
+  .footer-bottom .mod_customnav ul li a {
+    font: 1.1em "Exo 2", sans-serif;
   }
 }

@@ -222,7 +222,7 @@
   }
 }
 
-.tree-planting {
+.tree-planting{
   background: $blue;
   transform: rotate(8deg) skew(8deg);
   width: calc(100% + 60px);
@@ -231,7 +231,7 @@
   padding-top: 80px;
   border-top: 100px solid $green;
   position: relative;
-  margin-top: -170px;
+  margin-top: -140px;
   z-index: 205;
   /*position: relative;
   height: auto;
@@ -244,7 +244,7 @@
     left: -25%;
     background: $blue;
     border-top: 100px solid $green;
-    transform: rotate(-8deg);
+    transform: rotate(8deg);
   }*/
 }
 
@@ -253,7 +253,7 @@
   position: relative;
   padding-bottom: 100px;
   width: 850px;
-  margin: 0 auto;
+  margin: 150px auto 0;
   .image_container {
     display: flex;
     justify-content: center;
@@ -273,6 +273,7 @@
     margin: 0 auto;
     border-bottom: 2px solid;
     padding-bottom: 15px;
+    font-weight: 200;
   }
   h3 {
     text-align: center;
@@ -282,6 +283,7 @@
   p {
     font: 1.2em "Exo 2", sans-serif;
     line-height: 1.5em;
+    font-weight: 200;
   }
 }
 
@@ -410,6 +412,8 @@
   position: relative;
   img {
     width: 100%;
+    height: 50vh;
+    object-fit: cover;
   }
 }
 
@@ -417,7 +421,7 @@
   position: relative;
   .counter-box {
     position: absolute;
-    bottom: 40px;
+    bottom: 0px;
     background: white;
     left: 50%;
     transform: translateX(-50%);
@@ -549,8 +553,8 @@ a.ntooltip:hover .ctooltip {
   /*  margin-top: 55px;*/
     text-align: center;
     left: auto !important;
-    top: auto !important;
     transform :none !important;
+    top: 0;
   }
 
   #karte .eisenach,  #karte-tree .eisenach {
@@ -592,8 +596,11 @@ a.ntooltip:hover .ctooltip {
     transform: translateY(0);
   }
 
-  .home-teaser {
+  #main .home-teaser {
     width: 100%;
+    .liste {
+      padding-top: 180px;
+    }
   }
 
   #main .liste ul{
@@ -676,10 +683,32 @@ a.ntooltip:hover .ctooltip {
   .teaser {
     width: 90%;
   }
+  .mobile-only {
+    display: block;
+  }
+  .mobil #karte, .mobil #karte-tree  {
+    display:block;
+  }
+  .desktop #karte, .desktop #karte-tree  {
+    display:none;
+  }
+  .map-tree #karte-tree {
+    .weimar, .saalfeld, .apolda, .muehlhausen,
+    .leinefelde, .nordhausen, .ohra, .sondershausen,
+    .altenburg, .eisenach {
+      img {
+        width: 60px;
+      }
+    }
+  }
+
+  .counter-block img {
+    height: 70vh;
+  }
 }
 
-@media screen and (max-width: 900px) {
-  .mobil #karte, .mobil #karte-tree  {
+@media screen and (max-width: 990px) {
+  /*.mobil #karte, .mobil #karte-tree  {
     display:block;
   }
   .desktop #karte, .desktop #karte-tree  {
@@ -696,6 +725,23 @@ a.ntooltip:hover .ctooltip {
   }
   .mobile-only {
     display: block;
+  }*/
+  .counter-block .counter-box {
+    padding: 45px 30px 20px;
+    h3 {
+      font-size: 1.3em;
+    }
+  }
+  #main .liste ul a {
+    font: 1.4em "Exo 2", sans-serif;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .planting-image .image_container img {}
+  .planting-image {
+    width: 90%;
+    max-width: 1000px;
   }
 }
 
@@ -714,6 +760,104 @@ a.ntooltip:hover .ctooltip {
     img {
       width: 90%;
       max-width: 100%;
+    }
+  }
+  #main .home-teaser .liste {
+    padding-top: 60px;
+  }
+
+  #main .teaser.content {
+    width: 80%;
+  }
+
+  .map-tree #karte-tree {
+    img {
+      width: 90%;
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .map-tree #karte-tree {
+    top: 100px;
+  }
+  #karte, #karte-tree {
+    top: 100px;
+  }
+
+  #main .liste ul a {
+    font: 1.1em "Exo 2", sans-serif;
+  }
+  #main .liste ul a li::after {
+    font-size: 22px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #karte, #karte-tree {
+    top: -10px;
+  }
+  #main .inside::before {
+    border-top: 80px solid #f49600;
+  }
+  #main .home-teaser .liste {
+    padding-top: 0px;
+  }
+  #main .liste ul a {
+    font-size: 20px;
+    li::after {
+      margin-top: 65px;
+    }
+    & > li#eisenach {
+      font-size: 19px;
+    }
+    & > li#gotha::after, & > li#ohra::after, & > li#weimar::after{
+      margin-top: 45px;
+    }
+  }
+
+  .counter-block .counter-box {
+    padding: 26px 0 0;
+    width: 75%;
+    margin: 0 auto;
+    height: 120px;
+    bottom: 20px;
+    h3 {
+      font-size: 1.1em;
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  .tree-planting {
+    padding-bottom: 200px;
+  }
+
+  .planting-image {
+    margin: 70px auto 0;
+  }
+
+  #main .teaser.content {
+    width: 70%;
+    padding-bottom: 0;
+    h2 {
+      font-size: 1.6em;
+    }
+  }
+
+  .map-tree {
+    margin-top: -230px;
+  }
+  .map-tree #karte-tree {
+    .weimar, .saalfeld, .apolda, .muehlhausen,
+    .leinefelde, .nordhausen, .ohra, .sondershausen,
+    .altenburg, .eisenach {
+      img {
+        width: 30px;
+      }
     }
   }
 }

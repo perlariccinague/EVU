@@ -80,6 +80,9 @@ nav.mobil {
   #header, .start #header {
     min-height: auto;
   }
+  .start #header {
+    height: 100vh;
+  }
 
   #header {
     margin-top: 0 !important;
@@ -97,15 +100,15 @@ nav.mobil {
   }
 
   #header .Headline {
-    margin-top: 50px;
+    margin: 50px auto;
     display: block;
     p {
       max-width:630px;
       margin-right:auto;
       margin-left:auto;
-      padding-bottom:19px;
+      padding-bottom: 0;
       text-align:center;
-      font:3em/1.6em 'Exo 2',sans-serif;
+      font: 2em/1.2em "Exo 2", sans-serif;
       color:#fff;
       text-transform:uppercase;
       font-weight: 300;
@@ -134,16 +137,27 @@ nav.mobil {
   }
 }
 
+@media screen and (max-width: 900px) {
+ /* .start #header {
+    height: 80vh;
+  }*/
+}
+
 @media screen and (max-width: 730px) {
   nav.mobil,
   .nav-open {
     right: 11vw !important;
   }
 
+  .start #header {
+    height: 100vh !important;
+  }
+
   #header .Headline {
     p {
-      font-size: 1.2em;
+      font: 1.6em/1.4em "Exo 2", sans-serif;
       padding-bottom: 0;
+      width: 90%;
     }
     hr {
       max-width: 320px !important;
@@ -151,5 +165,13 @@ nav.mobil {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .start #header {
+    height: 85vh !important;
+  }
+  #header .Headline p {
+    font: 1.2em/1.6em "Exo 2", sans-serif;
+  }
+}
 
 

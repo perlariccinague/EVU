@@ -1,6 +1,6 @@
 @import "variables";
 
-.ce_accordionStart.ce_accordion {
+#main .ce_accordionStart.ce_accordion {
   border-bottom: 2px solid #003f74;
   width: 100%;
   margin: 0 auto;
@@ -27,6 +27,117 @@
       &:after {
         background: url("/files/layout/pfeil-accordeon-up.svg") no-repeat 0/cover;
       }
+    }
+  }
+  .accordion {
+    .ce_text {
+      padding: 0px 75px;
+      p {
+        font-size: 20px;
+        line-height: 1em;
+        a {
+          color: white;
+          position: relative;
+          padding-left: 35px;
+          font-weight: 200;
+          font-style: italic;
+          &:after {
+            position: absolute;
+            background: url("/files/layout/more.png") no-repeat;
+            content: "";
+            left: 0;
+            top: -10px;
+            width: 40px;
+            height: 40px;
+          }
+        }
+        &:first-child {
+          margin-top: 0;
+          border-bottom: 1px solid;
+          padding-bottom: 10px;
+          max-width: 485px;
+        }
+      }
+
+    }
+  }
+  &:last-child {
+    border: 0;
+  }
+}
+
+.accordion-block {
+  padding-top: 50px;
+  #altenburg-tree {
+    background: #8ada57;
+  }
+  #apolda-tree {
+    background: #89db55;
+  }
+  #eisenach-tree {
+    background: #85cc58;
+  }
+  #leinefelde-tree {
+    background: #94dd66;
+  }
+  #muehlhausen-tree {
+    background: #9edf75;
+  }
+  #nordhausen-tree {
+    background: #9ddd75;
+  }
+  #ohra-tree {
+    background: #9ddd75;
+  }
+  #saalfeld-tree {
+    background: #9ddd75;
+  }
+  #sondershausen-tree {
+    background: #9ddd75;
+  }
+  #weimar-tree {
+    background: #9ddd75;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+
+}
+
+@media screen and (max-width: 600px)  {
+  .accordion-block {
+    padding-top: 150px;
+  }
+  #main .ce_accordionStart.ce_accordion {
+    .toggler {
+      font-size: 20px;
+    }
+    .accordion .ce_text p {
+      font-size: 15px;
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .accordion-block {
+    padding-top: 140px;
+  }
+
+  #main .ce_accordionStart.ce_accordion {
+    .toggler {
+      font-size: 20px;
+      padding: 10px 40px;
+      &:after {
+        right: 30px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .accordion .ce_text {
+      padding: 0 40px;
     }
   }
 }
