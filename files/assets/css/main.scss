@@ -231,7 +231,8 @@
   padding-top: 80px;
   border-top: 100px solid $green;
   position: relative;
-  margin-top: -140px;
+/*  margin-top: -140px;*/
+  margin-top: -175px;
   z-index: 205;
   /*position: relative;
   height: auto;
@@ -412,7 +413,7 @@
   position: relative;
   img {
     width: 100%;
-    height: 50vh;
+   /* height: 50vh;*/
     object-fit: cover;
   }
 }
@@ -421,16 +422,37 @@
   position: relative;
   .counter-box {
     position: absolute;
-    bottom: 0px;
+    bottom: 40px;
     background: white;
     left: 50%;
     transform: translateX(-50%);
     border: 10px solid #002c4c;
-    padding: 50px 70px 30px;;
+    padding: 50px 70px 50px;;
     z-index: 210;
     #counter {
       color: #009ce0;
       text-align: center;
+      span {
+        position: relative;
+        background-color: #009ce0;
+        color: white;
+        margin: 0 5px;
+        padding: 0 10px;
+        font-size: 57px;
+        font-weight: 600;
+        font-family: "Exo 2", sans-serif;
+        &:before {
+          position: absolute;
+          width: 100%;
+          height: 8px;
+          left: 0;
+          top: 50%;
+          content: " ";
+          z-index: 2;
+          transform: translateY(-50%);
+          border-bottom: 1px solid #837f7f8c;
+        }
+      }
     }
     h3 {
       border-top: 2px solid;
@@ -439,6 +461,17 @@
       color: #002c4c;
       font-weight: 200;
       text-transform: uppercase;
+      text-align: center;
+    }
+    &:after {
+      position: absolute;
+      bottom: -68px;
+      left: -5%;
+      width: 110%;
+      height: 100px;
+      content: '';
+      background: #002c4c;
+      transform: rotate(8deg);
     }
   }
 }
@@ -594,6 +627,7 @@ a.ntooltip:hover .ctooltip {
     height: auto;
     margin-top: -335px;
     transform: translateY(0);
+    
   }
 
   #main .home-teaser {
@@ -727,7 +761,7 @@ a.ntooltip:hover .ctooltip {
     display: block;
   }*/
   .counter-block .counter-box {
-    padding: 45px 30px 20px;
+    padding: 45px 30px 50px;
     h3 {
       font-size: 1.3em;
     }
@@ -746,16 +780,6 @@ a.ntooltip:hover .ctooltip {
 }
 
 @media screen and (max-width: 730px) {
-  /*.start #main {
-    margin-top: 210px !important;
-  }
-  #main {
-    margin-top: 110px !important;
-  }
-  #container {
-    padding-bottom: 55px !important;
-    border-top: 14vw solid #f49600 !important;
-  }*/
   .mobil #karte {
     img {
       width: 90%;
@@ -819,16 +843,24 @@ a.ntooltip:hover .ctooltip {
   }
 
   .counter-block .counter-box {
-    padding: 26px 0 0;
+    padding: 37px 0 35px;
     width: 75%;
     margin: 0 auto;
     height: 120px;
-    bottom: 20px;
+   /* bottom: 20px;*/
+    bottom: 40px;
     h3 {
       font-size: 1.1em;
       width: 90%;
       margin-right: auto;
       margin-left: auto;
+    }
+    #counter {
+      span {
+        margin: 0 3px;
+        padding: 5px 8px;
+        font-size: 35px;
+      }
     }
   }
 

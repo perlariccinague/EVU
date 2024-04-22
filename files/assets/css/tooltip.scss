@@ -23,6 +23,10 @@
   pointer-events: auto;
 }
 
+.map-tree .tooltip-content {
+  margin-left: 10px;
+}
+
 
 .tooltip-content {
   position: absolute;
@@ -40,7 +44,7 @@
   color: #fff;
   opacity: 0;
   pointer-events: none;
-  margin-left: 50px;
+  margin-left: 37px;
 }
 
 .tooltip-effect-1 .tooltip-content {
@@ -106,9 +110,9 @@
   position: absolute;
   width: 0;
   height: 0;
-  left: -40px;
+  left: -20px;
   bottom: 55px;
-  border: 20px solid;
+  border: 10px solid;
   border-color: transparent rgba(0,44,76,.93) rgba(0,44,76,.93) transparent;
 }
 

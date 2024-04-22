@@ -1,14 +1,15 @@
 <section data-number="<?= $this->number_of_trees ?>" class="<?php echo $this->class ?> block"<?php echo $this->cssID ?>>
     <div class="tree-block">
         <div class="tree-top">
-            <!--<img src="{{file::<?/*= $this->image */?>}}">-->
             <span class="dot"></span>
         </div>
+        <!--<div class="dotted-line"></div>-->
         <div class="tree-bottom">
             <div class="popup-close"><img src="files/layout/close.png"> </div>
             <h3><?= $this->text  ?></h3>
             <p><?= $this->description  ?></p>
         </div>
+       <div class="dotted-line"></div>
     </div>
 </section>
 
