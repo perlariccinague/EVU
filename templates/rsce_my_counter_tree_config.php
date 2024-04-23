@@ -1,6 +1,6 @@
 <?php
 return array(
-    'label' => array('Bäume', 'Meine Beschreibung...'),
+    'label' => array('Anzahl der Bäume', 'Meine Beschreibung...'),
     'types' => array('content', 'module'),
     'contentCategory' => 'texts',
     'moduleCategory' => 'miscellaneous',
@@ -11,18 +11,13 @@ return array(
     ),
     'fields' => array(
         'text' => array(
-            'label' => array('Title', 'Beschreibung...'),
+            'label' => array('Standort', 'Beschreibung...'),
             'inputType' => 'text',
         ),
-        'description' => array(
-            'label' => array('Teaser', 'Beschreibung...'),
-            'eval' => array('rte' => 'tinyMCE'),
-            'inputType' => 'textarea',
-        ),
-        /*'number_of_trees' => array(
+        'number_of_trees' => array(
             'label' => array('Anzahl der Gepflanzte Bäume'),
             'inputType' => 'text',
-        ),*/
+        ),
     ),
 );
 

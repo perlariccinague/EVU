@@ -62,8 +62,10 @@
 }
 
 #karte .leinefelde, #karte-tree .leinefelde {
-  left: 13.7% !important;
-  top: 18.5% !important;
+  /*left: 13.7% !important;
+  top: 18.5% !important;*/
+  left: 11.7% !important;
+  top: 14.5% !important;
   position: absolute !important;
 }
 
@@ -328,8 +330,10 @@
   top: 29.5%;
 }
 #karte-tree .muehlhausen {
-  left: 15.7%;
-  top: 21.5%;
+  /*left: 15.7%;
+  top: 21.5%;*/
+  left: 17.7%;
+  top: 22.5%
 }
 
 #karte-tree .leinefelde {
@@ -474,6 +478,10 @@
       transform: rotate(8deg);
     }
   }
+}
+
+#main .liste ul a span {
+  display: none;
 }
 
 
@@ -641,8 +649,26 @@ a.ntooltip:hover .ctooltip {
     a {
       width: 100%;
       padding-top: 25px;
-      padding-bottom: 50px;
+      padding-bottom: 25px;
       font: 1.6em 'Exo 2',sans-serif;
+      span {
+        display: block;
+        position: relative;
+        max-width: 610px;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: capitalize;
+        padding-left: 50px;
+        &:before {
+          position: absolute;
+          content: "";
+          background: url("/files/layout/more.png") no-repeat 0/cover;
+          top: -4px;
+          left: 20px;
+          width: 30px;
+          height: 32px;
+        }
+      }
     }
   }
 
@@ -678,8 +704,9 @@ a.ntooltip:hover .ctooltip {
             width: 100%;
             font-weight: 300;
             float: none !important;
-            display: block;
+            /*display: block;*/
             right: 0;
+            display: none;
           }
         }
       }
@@ -800,6 +827,13 @@ a.ntooltip:hover .ctooltip {
       max-width: 100%;
     }
   }
+  #main .liste ul a span {
+    padding-left: 35px;
+    &:before {
+      top: -7px;
+      left: 3px;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -811,12 +845,22 @@ a.ntooltip:hover .ctooltip {
   }
 
   #main .liste ul a {
-    font: 1.1em "Exo 2", sans-serif;
+    font: 1.2em "Exo 2", sans-serif;
+    padding-bottom: 25px;
   }
   #main .liste ul a li::after {
     font-size: 22px;
     margin-top: 40px;
   }
+
+ /* #main .liste ul a span {
+    padding-left: 30px;
+    font-size: 22px;
+    &:before {
+      left: 0;
+      top: -7px;
+    }
+  }*/
 }
 
 @media screen and (max-width: 450px) {

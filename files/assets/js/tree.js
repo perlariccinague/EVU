@@ -5,15 +5,13 @@ const popUpClose = document.querySelectorAll('.popup-close');
 const dots = document.querySelectorAll('.dot');
 const overlay = document.querySelector('.tree-overlay');
 const block = document.querySelectorAll('.ce_rsce_my_tree');
-console.log(allTree);
-console.log(block)
+
 
 allTree.forEach(tree => {
     tree.addEventListener('click', event => {
         let treePopUp = tree.nextElementSibling;
         let treeDot = tree.firstElementChild;
         let line = tree.offsetParent.lastElementChild;
-        console.log(line)
         if (treePopUp.style.display === "block") {
             treePopUp.style.display = "none";
             overlay.style.display = 'none';

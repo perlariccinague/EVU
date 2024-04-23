@@ -2,7 +2,7 @@ const counter = document.getElementById("counter");
 
 let sum = 0;
 let sumString;
-const memberAll = document.querySelectorAll('.ce_rsce_my_tree');
+const memberAll = document.querySelectorAll('.ce_rsce_my_counter_tree');
 memberAll.forEach(element => {
     let numberTree = element.dataset.number;
     const intNumber = parseInt(numberTree) || 0;
