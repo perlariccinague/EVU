@@ -71,7 +71,7 @@ footer .footer-top .liste ul .last.h {
     ul {
       display: flex;
       li {
-        &:first-child {
+      /*  &:first-child {
           position: relative;
           padding-right: 23px;
           &:after {
@@ -80,7 +80,7 @@ footer .footer-top .liste ul .last.h {
             right: 4px;
             font-size: 18px;
           }
-        }
+        }*/
         a {
           font:1.2em 'Exo 2',sans-serif;
           text-decoration:none;

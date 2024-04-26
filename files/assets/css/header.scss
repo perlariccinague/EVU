@@ -30,7 +30,7 @@
   left: 20vw;
   li {
     float: left;
-    &:first-child {
+    /*&:first-child {
       position: relative;
       padding-right: 23px;
       &:after {
@@ -39,7 +39,7 @@
         right: 4px;
         font-size: 18px;
       }
-    }
+    }*/
   }
   a {
     font:1.2em 'Exo 2',sans-serif;
